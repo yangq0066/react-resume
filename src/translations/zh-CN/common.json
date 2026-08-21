@@ -32,9 +32,8 @@
       "job": "职位",
       "degree": "学历",
       "mobile": "手机号",
-      "QQ": "QQ",
       "e-mail": "电子邮件",
-      "github": "Github"
+      "blog": "Blog"
     },
     "projects": {
       "_": "项目经历",

@@ -32,9 +32,8 @@
       "job": "job",
       "degree": "degree",
       "mobile": "mobile",
-      "QQ": "QQ",
       "e-mail": "e-mail",
-      "github": "Github"
+      "blog": "Blog"
     },
     "projects": {
       "_": "projects",

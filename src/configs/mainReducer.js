@@ -16,7 +16,7 @@ const defaultState = {
         {
             field: 'personalInfo',
             component: <PersonalInfo/>,
-            keys: ['name', 'city', 'birth', 'job', 'degree', 'mobile', 'QQ', 'e-mail', 'github']
+            keys: ['name', 'city', 'birth', 'job', 'degree', 'mobile', 'e-mail', 'blog']
         },
 
         {

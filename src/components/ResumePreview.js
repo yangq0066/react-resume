@@ -140,21 +140,17 @@ class ResumePreview extends Component {
                                         </a>
                                     </div>
                                     <div className='padding-5'>
-                                        <label>{`${t('resume.personalInfo.QQ')}：`}</label>
-                                        <span>{personalInfo.QQ}</span>
-                                    </div>
-                                    <div className='padding-5'>
                                         <label>{`${t('resume.personalInfo.e-mail')}：`}</label>
                                         <a href={`mailto:${personalInfo['e-mail']}`}>
                                             <span>{personalInfo['e-mail']}</span>
                                         </a>
                                     </div>
                                     <div className='padding-5'>
-                                        <label>{`${t('resume.personalInfo.github')}：`}</label>
-                                        <a href={personalInfo['github']} target='_blank'
+                                        <label>{`${t('resume.personalInfo.blog')}：`}</label>
+                                        <a href={personalInfo['blog']} target='_blank'
                                            rel="noopener noreferrer"
                                         >
-                                            <span>{personalInfo['github']}</span>
+                                            <span>{personalInfo['blog']}</span>
                                         </a>
                                     </div>
                                 </section>
@@ -175,11 +171,15 @@ class ResumePreview extends Component {
                                                 <div className='resume-item'>
                                                     <span>{name}</span>
                                                     <span>
-                                                    <a href={`${link}`} title={t('preview')} target='_blank'
-                                                       rel="noopener noreferrer">
-                                                        <Preview/>
-                                                    </a>
-                                                </span>
+                                                        {
+                                                            link && (
+                                                                <a href={`${link}`} title={t('preview')} target='_blank'
+                                                                   rel="noopener noreferrer">
+                                                                    <Preview/>
+                                                                </a>
+                                                            )
+                                                        }
+                                                    </span>
                                                 </div>
                                                 <p>{details}</p>
                                             </li>
